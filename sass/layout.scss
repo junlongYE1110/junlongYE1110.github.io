@@ -38,9 +38,9 @@
 // Gui
 // =================================================================
 
+@import 'gui/promo-banner'; // Promo Banner
 @import 'gui/promo-block'; // Promo Block
 @import 'gui/service'; // Service
-@import 'gui/work'; // Work
 
 
 // Layout
@@ -54,7 +54,7 @@
 // =================================================================
 
 @import 'plugins/back-to-top'; // Back To Top
-@import 'plugins/bootstrap-components'; // Bootstrap Components
+@import 'plugins/swiper'; // Swiper
 
 
 // Utils

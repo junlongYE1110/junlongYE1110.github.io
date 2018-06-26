@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-  	[Header]
+    [Header]
 ------------------------------------------------------------------*/
 
 /* Fixed Top */
@@ -11,11 +11,12 @@
 
 /* Navbar */
 .header {
-	.navbar {
-		margin-bottom: 0;
+    .navbar {
+        background: $color-white;
+        margin-bottom: 0;
         border-bottom: 1px solid rgba(255,255,255,.2);
         @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-	}
+    }
 }
 
 /* Navbar Toggle */
@@ -62,9 +63,9 @@
 
                 &:before,
                 &:after {
-            		@include size(21px, 1px);
+                    @include size(21px, 1px);
                     background: $color-base;
-                	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
                 }
 
                 &.is-clicked {
@@ -96,43 +97,33 @@
 
     .logo-img {
         display: inline-block;
-        @include size(64px, auto);
+        @include size(76px, auto);
         max-width: 100%;
         max-height: 100%;
         vertical-align: middle;
-    }
-
-    .logo-img-main {
-        display: inline-block;
-        @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-    }
-
-    .logo-img-active {
-        display: none;
-        @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 }
 
 /* Navbar */
 .header {
-	.navbar-nav {
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
-	}
+    .navbar-nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
 }
 
 /* Nav */
 .header {
-	.nav-item {
-		@include position(relative);
-		display: block;
+    .nav-item {
+        @include position(relative);
+        display: block;
 
-		&:last-child {
-			.nav-item-child {
-				padding-right: 0;
-			}
-		}
+        &:last-child {
+            .nav-item-child {
+                padding-right: 0;
+            }
+        }
 
         &.active {
             .nav-item-hover {
@@ -151,23 +142,23 @@
                 }
             }
         }
-	}
-	
-	.nav-item-child {
-		@include position(relative);
-		display: block;
-		@include font($size: 13px, $weight: 600, $family: $font-family-base);
-        color: $color-white;
-		text-transform: uppercase;
-		line-height: 55px;
-		padding: 20px;
+    }
+    
+    .nav-item-child {
+        @include position(relative);
+        display: block;
+        @include font($size: 13px, $weight: 600, $family: $font-family-base);
+        color: $color-heading;
+        text-transform: uppercase;
+        line-height: 55px;
+        padding: 20px;
         @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
         &:hover,
         &:focus {
             background: inherit;
         }
-	}
+    }
 
     .nav-item-hover {
         @include position(relative);
@@ -205,8 +196,8 @@
         }
 
         .nav-collapse {
-        	padding-left: 0;
-        	padding-right: 0;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .navbar-nav {
@@ -226,19 +217,6 @@
         }
     }
 
-    /* Logo */
-    .header {
-        .logo {
-            .logo-img-main {
-                display: none;
-            }
-            
-            .logo-img-active {
-                display: inline-block;
-            }
-        }
-    }
-
     /* Navbar Nav */
     .header {
         .nav-item-child {
@@ -247,10 +225,10 @@
             padding: 12px 12px 12px 15px;
         }
 
-		.nav-item-hover {
-			&:after {
-		        @include position(absolute, $top: 19px);
-		    }
+        .nav-item-hover {
+            &:after {
+                @include position(absolute, $top: 19px);
+            }
         }
     }
 }
@@ -275,8 +253,8 @@
                 margin-right: 0;
 
                 > .nav-collapse {
-                	padding-left: 0;
-                	padding-right: 0;
+                    padding-left: 0;
+                    padding-right: 0;
                     margin-left: 0;
                     margin-right: 0;
                 }
@@ -303,16 +281,6 @@
                 background: $color-white;
                 border-bottom-color: #f0f0f0;
                 @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-            }
-
-            .logo-img-main {
-                display: none;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-            }
-            
-            .logo-img-active {
-                display: inline-block;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
             }
 
             .nav-item-child {
